@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 /// controller to show and serach for character
 final class RMCharacterViewController: UIViewController {
 
@@ -14,17 +13,14 @@ final class RMCharacterViewController: UIViewController {
         super.viewDidLoad()
         title = "Character"
         view.backgroundColor = .systemBackground
-        
-        let request = RMRequest(
-            endPoint: .character,
-            pathComponet: ["1"]
-        )
-        
-        print(request.url)
+        RMService.shared.execute(.listCharacter, expecting: RMGetAllCharacterResponse.self) { result in
+            switch result {
+            case .success(let model):
+                print(String(describing: model))
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
     }
-    
-    
-    
-    
 }
 
