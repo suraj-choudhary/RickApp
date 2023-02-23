@@ -6,12 +6,8 @@
 //
 
 import UIKit
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
-
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let vc = RMTabViewController()
@@ -22,11 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     }
-
     func sceneDidDisconnect(_ scene: UIScene) {
        
     }
-
     func sceneDidBecomeActive(_ scene: UIScene) {
        
     }

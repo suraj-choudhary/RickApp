@@ -14,7 +14,7 @@ final class RMTabViewController: UITabBarController {
     }
     private func setupTabs() {
         let characterVc = RMCharacterViewController()
-        let locationVc = RMCharacterViewController()
+        let locationVc = RMLocationViewController()
         let episodeVc = RMEpisodeViewController()
         let settingVc = RMsettingViewController()
         
@@ -26,7 +26,7 @@ final class RMTabViewController: UITabBarController {
         characterVc.title = "Character"
         locationVc.title = "Location"
         episodeVc.title = "Episodes"
-        settingVc.title = "Episode"
+        settingVc.title = "Setting"
         
         let nav1 = UINavigationController(rootViewController: characterVc)
         let nav2 = UINavigationController(rootViewController: locationVc)

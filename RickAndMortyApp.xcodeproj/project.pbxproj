@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170509CC29A74A0B00AAC4F1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170509CB29A74A0B00AAC4F1 /* Extension.swift */; };
 		175522A229A4103300782A00 /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175522A129A4103300782A00 /* RMService.swift */; };
 		175522A429A4104200782A00 /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175522A329A4104200782A00 /* RMRequest.swift */; };
 		175522A629A411C200782A00 /* RMEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175522A529A411C200782A00 /* RMEndPoint.swift */; };
+		1755562E29A6A28A0066192C /* RMCharcaterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755562D29A6A28A0066192C /* RMCharcaterListView.swift */; };
 		176CE89629A5F6F30033F28E /* RMGetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CE89529A5F6F30033F28E /* RMGetAllCharactersResponse.swift */; };
 		176CE89829A601920033F28E /* RMCharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CE89729A601920033F28E /* RMCharacterListViewModel.swift */; };
 		17D88EB129A422670056FDA8 /* RMOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D88EB029A422670056FDA8 /* RMOrigin.swift */; };
@@ -30,9 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170509CB29A74A0B00AAC4F1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		175522A129A4103300782A00 /* RMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
 		175522A329A4104200782A00 /* RMRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequest.swift; sourceTree = "<group>"; };
 		175522A529A411C200782A00 /* RMEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndPoint.swift; sourceTree = "<group>"; };
+		1755562D29A6A28A0066192C /* RMCharcaterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharcaterListView.swift; sourceTree = "<group>"; };
 		176CE89529A5F6F30033F28E /* RMGetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllCharactersResponse.swift; sourceTree = "<group>"; };
 		176CE89729A601920033F28E /* RMCharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterListViewModel.swift; sourceTree = "<group>"; };
 		17D88EB029A422670056FDA8 /* RMOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMOrigin.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 		176CE89929A606B20033F28E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1755562D29A6A28A0066192C /* RMCharcaterListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				17E837C229A0236200F72AA4 /* LaunchScreen.storyboard */,
 				17E837B729A0236100F72AA4 /* AppDelegate.swift */,
 				17E837B929A0236100F72AA4 /* SceneDelegate.swift */,
+				170509CB29A74A0B00AAC4F1 /* Extension.swift */,
 			);
 			name = Resurces;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 				17E837DB29A028FB00F72AA4 /* RMLocationViewController.swift in Sources */,
 				17E837D629A027D300F72AA4 /* RMEpisode.swift in Sources */,
 				17DDC75529A42E7D005343E4 /* RMLocation.swift in Sources */,
+				1755562E29A6A28A0066192C /* RMCharcaterListView.swift in Sources */,
 				17E837DD29A0292D00F72AA4 /* RMEpisodeViewController.swift in Sources */,
 				17E837D429A027C400F72AA4 /* RMCharacter.swift in Sources */,
 				17E837BC29A0236100F72AA4 /* RMTabViewController.swift in Sources */,
@@ -273,6 +280,7 @@
 				17E837BA29A0236100F72AA4 /* SceneDelegate.swift in Sources */,
 				17D88EB329A425E10056FDA8 /* RMCharacterGender.swift in Sources */,
 				176CE89629A5F6F30033F28E /* RMGetAllCharactersResponse.swift in Sources */,
+				170509CC29A74A0B00AAC4F1 /* Extension.swift in Sources */,
 				17E837D229A027AD00F72AA4 /* RMSingleLocation.swift in Sources */,
 				175522A429A4104200782A00 /* RMRequest.swift in Sources */,
 				17E837D929A0287600F72AA4 /* RMCharacterViewController.swift in Sources */,

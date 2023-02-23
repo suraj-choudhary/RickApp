@@ -13,7 +13,5 @@ final class RMLocationViewController: UIViewController {
         super.viewDidLoad()
         title = "Location"
         view.backgroundColor = .white
-
-
     }
 }
