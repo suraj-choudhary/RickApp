@@ -11,8 +11,8 @@ final class RMCharacterListViewModel: NSObject {
         RMService.shared.execute(.listChracter, expecting: RMGetAllCharactersResponse.self) { result in
             switch result {
             case .success(let model):
+                print(model.results.first?.image as Any)
                 print(String(describing: model))
-                print(model.info.count)
             case .failure(let failure):
                 print(String(describing: failure))
             }
@@ -25,15 +25,12 @@ extension RMCharacterListViewModel: UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
-    
-    /// cell for item of collectiob view
-    /// - Parameters:
-    ///   - collectionView: its a charcater of collection
-    ///   - indexPath: <#indexPath description#>
-    /// - Returns: <#description#>
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RMCharacterViewCell.cellIdentifier, for: indexPath) as? RMCharacterViewCell else {
+            fatalError("Unsupported cell")
+        }
+        let viewModel = RMCharacterColletionViewCellViewModel(characterName: "Suraj", characterStatus: .Alive, characterImageUrl: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"))
+        cell.configure(with: viewModel)
         cell.backgroundColor = .systemGray
         return cell
     }
@@ -43,7 +40,4 @@ extension RMCharacterListViewModel: UICollectionViewDataSource, UICollectionView
         let width = (bounds.width - 30) / 2
         return CGSize(width: width, height: width * 1.5)
     }
-    
-    
-    
 }
